@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+
 use strict;
 use warnings;
 use Getopt::Long;
@@ -98,5 +99,3 @@ for (my $i = 0; $i < @lines; $i++) {
 
     print $prefix . $branch . $curr . "\n";
 }
-
-
