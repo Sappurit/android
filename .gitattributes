@@ -1,7 +1,3 @@
-# === Default to LF line endings for all text files ===
-* text=auto eol=lf
-
-# === Specific source code files (LF only) ===
 *.sh      text eol=lf
 *.pl      text eol=lf
 *.c       text eol=lf

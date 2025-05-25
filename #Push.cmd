@@ -5,7 +5,7 @@ pause
 git add .
 pause
 
-git commit -a -m "%date% %time%"
+git commit --all --message "%date% %time%"
 pause
 
 git push
