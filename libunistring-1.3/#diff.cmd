@@ -1,5 +1,5 @@
 
-set "file1=openssl.c"
+set "file1=localcharset.c"
 
 set "diff=C:\util\GNU\bin\diff.exe"
 
