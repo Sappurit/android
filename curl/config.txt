@@ -1,0 +1,57 @@
+configure: Configured to build curl/libcurl:
+
+  Host setup:       aarch64-unknown-linux-android
+  Install prefix:   /home/sapp/android/aarch64-23
+  Compiler:         /home/sapp/android/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android23-clang
+   CFLAGS:          --sysroot=/home/sapp/android/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC -fvisibility=hidden -ffunction-sections -fdata-sections -Wno-error=implicit-function-declaration -Qunused-arguments -Werror-implicit-function-declaration -O2
+   CFLAGS extras:   
+   CPPFLAGS:        -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -DNDEBUG -D_GNU_SOURCE -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include -isystem /home/sapp/android/aarch64-23/include
+   LDFLAGS:         -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib -static -fuse-ld=lld -Wl,--no-undefined,--gc-sections,--icf=safe -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib
+     curl-config:   -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/android-ndk-r27c/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib -L/home/sapp/android/aarch64-23/lib
+   LIBS:            -lcares -ldl -lz -lm -lnghttp3 -lnghttp2 -lidn2 -liconv -lunistring -ldl -lz -lm -lssh2 -lssh2 -lcrypto -lz -lm -ldl -lzstd -lbrotlienc -lbrotlidec -lbrotlicommon -lpsl -lssl -lcrypto -lssl -lcrypto -lz -lm -ldl -pthread -lzstd -pthread -lbrotlienc -lbrotlidec -lbrotlicommon -lzstd -lzstd -lbrotlidec -lbrotlidec -lbrotlicommon -lz -lz -ldl -lm
+
+  curl version:     8.14.1
+  SSL:              enabled (OpenSSL v3+)
+  SSH:              enabled (libssh2)
+  zlib:             enabled
+  brotli:           enabled (libbrotlidec)
+  zstd:             enabled (libzstd)
+  GSS-API:          no      (--with-gssapi)
+  GSASL:            no      (libgsasl not found)
+  TLS-SRP:          enabled
+  resolver:         POSIX threaded
+  IPv6:             enabled
+  Unix sockets:     enabled
+  IDN:              enabled (libidn2)
+  Build docs:       no
+  Build libcurl:    Shared=no, Static=yes
+  Built-in manual:  no      (--enable-manual)
+  --libcurl option: enabled (--disable-libcurl-option)
+  Verbose errors:   enabled (--disable-verbose)
+  Code coverage:    disabled
+  SSPI:             no      (--enable-sspi)
+  ca cert bundle:   no
+  ca cert path:     no
+  ca cert embed:    /home/sapp/android/curl-8.14.1/cacert.pem
+  ca fallback:      no
+  LDAP:             no      (--enable-ldap / --with-ldap-lib / --with-lber-lib)
+  LDAPS:            no      (--enable-ldaps)
+  IPFS/IPNS:        enabled
+  RTSP:             enabled
+  RTMP:             no      (--with-librtmp)
+  PSL:              enabled
+  Alt-svc:          enabled (--disable-alt-svc)
+  Headers API:      enabled (--disable-headers-api)
+  HSTS:             enabled (--disable-hsts)
+  HTTP1:            enabled (internal)
+  HTTP2:            enabled (nghttp2)
+  HTTP3:            enabled (openssl + nghttp3)
+  ECH:              no      (--enable-ech)
+  HTTPS RR:         enabled (--disable-httpsrr)
+  SSLS-EXPORT:      enabled (--disable-ssls-export)
+  Protocols:        dict file ftp ftps gopher gophers http https imap imaps ipfs ipns mqtt pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
+  Features:         alt-svc asyn-rr AsynchDNS brotli CAcert HSTS HTTP2 HTTP3 HTTPS-proxy HTTPSRR IDN IPv6 Largefile libz NTLM PSL SSL SSLS-EXPORT threadsafe TLS-SRP UnixSockets zstd
+
+configure: WARNING: HTTP3 is enabled but marked EXPERIMENTAL. Use with caution!
+configure: WARNING: HTTPSRR is enabled but marked EXPERIMENTAL. Use with caution!
+configure: WARNING: SSLS-EXPORT is enabled but marked EXPERIMENTAL. Use with caution!

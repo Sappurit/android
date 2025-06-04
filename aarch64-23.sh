@@ -74,7 +74,7 @@ function lsin
   echo
   tree --noreport "$OUT/include"
   echo
-  ls -l "$OUT/include"
+  ls -ltr "$OUT/include"
   echo
 }
 
@@ -90,7 +90,7 @@ function lslib
   echo
   tree --noreport "$OUT/lib"
   echo
-  ls -l "$OUT/lib"
+  ls -ltr "$OUT/lib"
   echo
 }
 
@@ -106,7 +106,7 @@ function lspkg
   echo
   tree --noreport "$OUT/lib/pkgconfig"
   echo
-  ls -l "$OUT/lib/pkgconfig"
+  ls -ltr "$OUT/lib/pkgconfig"
   echo
 }
 
