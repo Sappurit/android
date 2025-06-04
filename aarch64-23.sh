@@ -53,7 +53,7 @@ function m
 
 function wgetaa
 {
-  wget -O $ANDROID_ROOT/aarch64-$API.sh https://raw.githubusercontent.com/Sappurit/android/main/aarch64-$API.sh"
+  wget -O "$ANDROID_ROOT/aarch64-$API.sh" "https://raw.githubusercontent.com/Sappurit/android/main/aarch64-$API.sh"
 }
 
 
