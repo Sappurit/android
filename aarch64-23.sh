@@ -51,12 +51,6 @@ function m
 }
 
 
-function wgetaa
-{
-  wget -O "$ANDROID_ROOT/aarch64-$API.sh" "https://raw.githubusercontent.com/Sappurit/android/main/aarch64-$API.sh"
-}
-
-
 function nanoaa
 {
   nano "$ANDROID_ROOT/aarch64-$API.sh"
@@ -147,7 +141,7 @@ function makeclean
 }
 
 
-function xmake
+function makex
 {
   echo
   local TMP_DIR="$(basename "$PWD")"
@@ -169,4 +163,41 @@ function xmake
   echo "[xmake] Something wrong."
   echo
 }
+
+
+function stripx
+{
+  echo
+  for f in "$@"; do
+    if [[ ! -f "$f" ]]; then
+      echo "File not found: $f"
+      echo
+      return
+    fi
+
+    if [[ "$f" == *.a ]]; then
+      option="--strip-unneeded"
+      read -p "Do you want to strip static library '$f' with $option [y/n]: " answer
+    elif [[ "$f" == *.so ]]; then
+      option="--strip-all"
+      read -p "Do you want to strip shared library '$f' with $option [y/n]: " answer
+    else
+      option="--strip-all"
+      read -p "Do you want to strip '$f' with $option [y/n]: " answer
+    fi
+
+    case "$answer" in
+      [yY]|[yY][eE][sS])
+        "$STRIP" $option "$f"
+        echo "Stripped: $f"
+        ls -l "$f"
+        ;;
+      *)
+        echo "Skipped: $f"
+        ;;
+    esac
+    echo
+  done
+}
+
 
